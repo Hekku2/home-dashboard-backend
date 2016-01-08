@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Living room TEMP",
+    "description": "Temperature in living room",
+    "createdUser": 1,
+    "updatedUser": 1
+  },
+  {
+    "name": "Desktop GPU TEMP",
+    "description": "Temperature of desktop computer GPU",
+    "createdUser": 1,
+    "updatedUser": 1
+  },
+  {
+    "name": "Outside TEMP",
+    "description": "Outside temperature.",
+    "createdUser": 1,
+    "updatedUser": 1
+  }
+]

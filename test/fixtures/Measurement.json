@@ -1,0 +1,44 @@
+[
+  {
+    "value": 21.2,
+    "timestamp": "2016-01-08 12:00:00",
+    "sensor": 1,
+    "createdUser": 1,
+    "updatedUser": 1
+  },
+  {
+    "value": 20.2,
+    "timestamp": "2016-01-08 12:30:00",
+    "sensor": 1,
+    "createdUser": 1,
+    "updatedUser": 1
+  },
+  {
+    "value": 21.0,
+    "timestamp": "2016-01-08 13:00:00",
+    "sensor": 1,
+    "createdUser": 1,
+    "updatedUser": 1
+  },
+  {
+    "value": -21.2,
+    "timestamp": "2016-01-08 08:00:00",
+    "sensor": 3,
+    "createdUser": 1,
+    "updatedUser": 1
+  },
+  {
+    "value": 60.2,
+    "timestamp": "2016-01-08 12:00:10",
+    "sensor": 2,
+    "createdUser": 1,
+    "updatedUser": 1
+  },
+  {
+    "value": 60.3,
+    "timestamp": "2016-01-08 12:00:20",
+    "sensor": 2,
+    "createdUser": 1,
+    "updatedUser": 1
+  }
+]
