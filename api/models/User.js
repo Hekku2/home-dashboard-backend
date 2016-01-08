@@ -55,23 +55,23 @@ module.exports = _.merge(_.cloneDeep(require('../base/Model')), {
 
     // Below are relations to another objects via generic 'createdUser' and 'updatedUser' properties
 
-    // Authors
-    createdAuthors: {
-      collection: 'Author',
+    // Sensors
+    createdSensors: {
+      collection: 'Sensor',
       via: 'createdUser'
     },
-    updatedAuthors: {
-      collection: 'Author',
+    updatedSensors: {
+      collection: 'Sensor',
       via: 'updatedUser'
     },
 
-    // Books
-    createdBooks: {
-      collection: 'Book',
+    // Measurements
+    createdMeasurements: {
+      collection: 'Measurement',
       via: 'createdUser'
     },
-    updatedBooks: {
-      collection: 'Book',
+    updatedMeasurements: {
+      collection: 'Measurement',
       via: 'updatedUser'
     }
   }

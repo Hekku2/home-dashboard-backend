@@ -48,7 +48,7 @@ var Passport = {
      * Provider fields: Provider, identifier and tokens
      *
      * "provider" is the name of the third-party auth service in all lowercase
-     * (e.g. 'github', 'facebook') whereas "identifier" is a provider-specific
+     * (e.g. 'github', 'facemeasurement') whereas "identifier" is a provider-specific
      * key, typically an ID. These two fields are used as the main means of
      * identifying a passport and tying it to a local user.
      *

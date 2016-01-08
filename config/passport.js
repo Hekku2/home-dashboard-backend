@@ -40,8 +40,8 @@ module.exports.passport = {
     }
   },
 
-  facebook: {
-    name: 'Facebook',
+  facemeasurement: {
+    name: 'Facemeasurement',
     protocol: 'oauth2',
     strategy: require('passport-facebook').Strategy,
     options: {

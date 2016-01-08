@@ -40,8 +40,8 @@ module.exports.policies = {
     'remove':   ['authenticated', 'isAdmin']
   },
 
-  // Book controller
-  BookController: {
+  // Measurement controller
+  MeasurementController: {
     '*':        ['authenticated'],
     'count':    ['authenticated'],
     'find':     ['authenticated'],
