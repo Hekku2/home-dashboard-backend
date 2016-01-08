@@ -10,7 +10,7 @@ module.exports = {
       host: 'localhost',
       user: 'root',
       password: 'root',
-      database: 'home-dashboard',
+      database: 'homedashboard',
       charset: 'utf8',
       collation: 'utf8_swedish_ci'
     }
