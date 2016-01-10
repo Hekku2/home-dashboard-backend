@@ -29,7 +29,7 @@ exports.login = function login(user, request) {
     .create({
       ip: request.ip,
       host: request.host,
-      agent: request.headers['user-agent'],
+      agent: (request.headers['user-agent'] || 'Unknown'),
       browser: (r.ua.toString() || 'Unknown'),
       browserVersion: (r.ua.toVersionString() || 'Unknown'),
       browserFamily: (r.ua.family || 'Unknown'),
