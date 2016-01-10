@@ -20,6 +20,10 @@ module.exports = _.merge(_.cloneDeep(require('../base/Model')), {
     description: {
       type: 'text'
     },
+    // Unit, type of measurement value provided by this sensor (ie. C, or F.. )
+    unit: {
+      type: 'text'
+    },
 
     // Below is all specification for relations to another models
 

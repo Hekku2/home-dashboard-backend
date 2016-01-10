@@ -2,18 +2,21 @@
   {
     "name": "Living room TEMP",
     "description": "Temperature in living room",
+    "unit": "°C",
     "createdUser": 1,
     "updatedUser": 1
   },
   {
     "name": "Desktop GPU TEMP",
     "description": "Temperature of desktop computer GPU",
+    "unit": "°C",
     "createdUser": 1,
     "updatedUser": 1
   },
   {
     "name": "Outside TEMP",
     "description": "Outside temperature.",
+    "unit": "°C",
     "createdUser": 1,
     "updatedUser": 1
   }
