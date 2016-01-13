@@ -52,4 +52,4 @@ everything is ok.
 ## License
 The MIT License (MIT)
 
-Based on [angular-sailsjs-boilerplate-backend](https://github.com/tarlepp/angular-sailsjs-boilerplate-backend)
+Based on tarlepp's [angular-sailsjs-boilerplate-backend](https://github.com/tarlepp/angular-sailsjs-boilerplate-backend)
