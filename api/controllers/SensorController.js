@@ -23,10 +23,10 @@ module.exports = _.merge(_.cloneDeep(require('../base/Controller')), {
 
         var formatData = function formatData(data){
             return _.map(data.sensors, function iterator(item) {
-                return [
-                    _findLatestMeasurement(item.id),
-                    item
-                ];
+                return {
+                    measurement: _findLatestMeasurement(item.id),
+                    sensor: item
+                };
             });
 
             function _findLatestMeasurement(sensorId) {
