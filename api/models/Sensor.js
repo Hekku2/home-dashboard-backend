@@ -27,10 +27,15 @@ module.exports = _.merge(_.cloneDeep(require('../base/Model')), {
 
     // Below is all specification for relations to another models
 
-    // Measurements that area attached to author
+    // Measurements that area attached to sensor
     measurements: {
       collection: 'measurement',
       via: 'sensor'
+    },
+
+    // Sensor of the measurement
+    group: {
+      model: 'sensorGroup'
     }
   }
 });

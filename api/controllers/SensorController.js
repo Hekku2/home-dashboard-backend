@@ -18,7 +18,7 @@ module.exports = _.merge(_.cloneDeep(require('../base/Controller')), {
 
         var fetchSensors = function fetchSensors(){
             return sails.models['sensor']
-                .find();
+                .find().populate('group');
         };
 
         var formatData = function formatData(data){

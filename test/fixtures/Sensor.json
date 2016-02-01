@@ -1,23 +1,67 @@
 [
+
   {
-    "name": "Living room TEMP",
-    "description": "Temperature in living room",
+    "name": "Desktop CPU TEMP",
+    "description": "Temperature of desktop computer CPU",
     "unit": "°C",
     "createdUser": 1,
-    "updatedUser": 1
+    "updatedUser": 1,
+    "group": 1
   },
   {
     "name": "Desktop GPU TEMP",
     "description": "Temperature of desktop computer GPU",
     "unit": "°C",
     "createdUser": 1,
-    "updatedUser": 1
+    "updatedUser": 1,
+    "group": 1
+  },
+  {
+    "name": "Desktop hard drive TEMP",
+    "description": "Temperature of desktop computer hard drive",
+    "unit": "°C",
+    "createdUser": 1,
+    "updatedUser": 1,
+    "group": 1
+  },
+  {
+    "name": "Living room TEMP",
+    "description": "Temperature in living room",
+    "unit": "°C",
+    "createdUser": 1,
+    "updatedUser": 1,
+    "group": 2
   },
   {
     "name": "Outside TEMP",
     "description": "Outside temperature.",
     "unit": "°C",
     "createdUser": 1,
-    "updatedUser": 1
+    "updatedUser": 1,
+    "group": 2
+  },
+  {
+    "name": "Inside TEMP",
+    "description": "Inside temperature, living room.",
+    "unit": "°C",
+    "createdUser": 1,
+    "updatedUser": 1,
+    "group": 2
+  },
+  {
+    "name": "Humidity inside",
+    "description": "Inside humidity, licing room",
+    "unit": "%",
+    "createdUser": 1,
+    "updatedUser": 1,
+    "group": 2
+  },
+  {
+    "name": "Electricity",
+    "description": "Electricity usage, read from internet.",
+    "unit": "kWh",
+    "createdUser": 1,
+    "updatedUser": 1,
+    "group": 3
   }
 ]

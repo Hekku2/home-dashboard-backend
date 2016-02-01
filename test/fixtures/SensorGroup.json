@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Home computer",
+    "description": "Desktop computer in home",
+    "createdUser": 1,
+    "updatedUser": 1
+  },
+  {
+    "name": "Raspberry Pi 1",
+    "description": "Outside & inside ",
+    "createdUser": 1,
+    "updatedUser": 1
+  },
+  {
+    "name": "Server",
+    "description": "Sensors operated by server",
+    "createdUser": 1,
+    "updatedUser": 1
+  }
+]
