@@ -12,15 +12,22 @@ describe('Generic controller test', function controllerTest() {
             controller: 'SensorController',
             url: '/sensor/',
             identifier: 2,
-            count: 5,
+            count: 8,
             data: {
                 identifier: {
-                    name: "Leo Tolstoy",
-                    description: "Count Lev Nikolayevich Tolstoy (Russian: Лев Никола́евич Толсто́й, pronounced [lʲef nʲɪkɐˈlaɪvʲɪt͡ɕ tɐlˈstoj] ( listen); 9 September [O.S. 28 August] 1828 – 20 November [O.S. 7 November] 1910), also known as Leo Tolstoy, was a Russian writer and philosopher who primarily wrote novels and short stories. Tolstoy was a master of realistic fiction and is widely considered one of the world's greatest novelists. He is best known for two long novels, War and Peace (1869) and Anna Karenina (1877). Tolstoy first achieved literary acclaim in his 20s with his semi-autobiographical trilogy of novels, Childhood, Boyhood, and Youth (1852-1856) and Sevastopol Sketches (1855), based on his experiences in the Crimean War. His fiction output also includes two additional novels, dozens of short stories, and several famous novellas, including The Death of Ivan Ilych, Family Happiness, and Hadji Murad. Later in life, he also wrote plays and essays. Tolstoy is equally known for his complicated and paradoxical persona and for his extreme moralistic and ascetic views, which he adopted after a moral crisis and spiritual awakening in the 1870s, after which he also became noted as a moral thinker and social reformer."
+                    name: 'Desktop GPU TEMP',
+                    description: 'Temperature of desktop computer GPU',
+                    unit: '°C'
                 },
                 newRecord: {
-                    name: "Frank Herbert",
-                    description: "Franklin Patrick Herbert, Jr. was an American science fiction writer best known for the novel Dune and its five sequels."
+                    name: 'Best Sensor EU',
+                    description: 'BEST SENSOR EU MLG TOBLERONE',
+                    unit: '°F'
+                },
+                updateRecord: {
+                    name: 'Updated sensor',
+                    description: 'Mera sensoren 400',
+                    unit: 'K'
                 }
             }
         },
@@ -28,16 +35,16 @@ describe('Generic controller test', function controllerTest() {
             controller: 'MeasurementController',
             url: '/measurement/',
             identifier: 2,
-            count: 48,
+            count: 6,
             data: {
                 identifier: {
                     timestamp: new Date("1937-01-01T00:00:00.000Z"),
-                    value: 0,
+                    value: 20.2,
                     sensor: 1
                 },
                 newRecord: {
                     timestamp: new Date("1885-01-01T00:00:00.000Z"),
-                    value: 0,
+                    value: 13.3,
                     sensor: 2
                 }
             }
@@ -62,13 +69,14 @@ describe('Generic controller test', function controllerTest() {
             controller: 'UserController',
             url: '/user/',
             identifier: 1,
-            count: 2,
+            count: 3,
             data: {
                 identifier: {
                     username: "admin",
                     email: "admin@some.domain",
                     firstName: "Arnold",
                     lastName: "Administrator",
+                    role: 1,
                     admin: true
                 },
                 newRecord: {
@@ -76,6 +84,7 @@ describe('Generic controller test', function controllerTest() {
                     email: "schwarzenegger@some.domain",
                     firstName: "Arnold",
                     lastName: "Schwarzenegger",
+                    role: 2,
                     admin: false
                 },
                 updateRecord: {
@@ -83,9 +92,9 @@ describe('Generic controller test', function controllerTest() {
                     email: "stallone@some.domain",
                     firstName: "Sylvester",
                     lastName: "Stallone",
+                    role: 2,
                     admin: false
                 }
-
             }
         }
     ].forEach(function testCase(testCase) {

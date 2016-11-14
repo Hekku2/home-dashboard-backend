@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "admin",
+    "description": "Administrator of system"
+  },
+  {
+    "id": 2,
+    "name": "user",
+    "description": "User"
+  },
+  {
+    "id": 3,
+    "name": "sensor",
+    "description": "Sensor group"
+  }
+]

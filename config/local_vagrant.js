@@ -24,6 +24,7 @@ module.exports = {
   port: 1337,
   environment: 'development',
   log: {
-    level: 'info'
+    level: 'verbose',
+    filePath: 'application.log'
   }
 };

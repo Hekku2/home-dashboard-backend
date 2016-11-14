@@ -5,7 +5,8 @@
     "email": "admin@some.domain",
     "firstName": "Arnold",
     "lastName": "Administrator",
-    "admin": true
+    "admin": true,
+    "role": 1
   },
   {
     "id": 2,
@@ -14,7 +15,19 @@
     "firstName": "John",
     "lastName": "Doe",
     "admin": false,
+    "role": 2,
     "createdUser": 1,
     "updatedUser": 1
+  },
+  {
+    "id": 3,
+    "username": "sensor",
+    "email": "test@test.com",
+    "firstName": "Sensor",
+    "lastName": "Sensor",
+    "admin": false,
+    "createdUser": 1,
+    "updatedUser": 1,
+    "role": 1
   }
 ]

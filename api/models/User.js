@@ -33,6 +33,11 @@ module.exports = _.merge(_.cloneDeep(require('../base/Model')), {
 
     // Below is all specification for relations to another models
 
+    // Role object
+    role: {
+      model: 'Role',
+      required: true
+    },
     // Passport configurations
     passports: {
       collection: 'Passport',
