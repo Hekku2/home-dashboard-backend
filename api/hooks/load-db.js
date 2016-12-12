@@ -32,7 +32,7 @@ module.exports = function hook(sails) {
             var barrels = new Barrels();
             var fixtures = _.keys(barrels.data);
 
-            barrels.populate(['role', 'user'], function(error) {
+            barrels.populate(['role', 'user', 'passport'], function(error) {
               if (error) {
                 sails.log.error(__filename + ':' + __line + ' [Hook.load-db] Error ' + error);
                 next(error);
