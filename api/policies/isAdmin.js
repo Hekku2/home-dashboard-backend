@@ -14,7 +14,7 @@ module.exports = function isAdmin(request, response, next) {
 
   // Fetch current user by the token
   sails.models['user']
-    .findOne({id: { '!': request.token}})
+    .findOne({id: request.token})
     .exec(function exec(error, user) {
       if (error) {
         next(error);
