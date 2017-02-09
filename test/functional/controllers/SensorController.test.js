@@ -47,7 +47,8 @@ describe('SensorController', function AuthController() {
                         }
                         expect(result.res.body).to.be.a('array');
                         expect(result.res.body[4].sensor.name).to.equal('Outside TEMP');
-                        expect(result.res.body[4]).to.not.have.property('measurement');
+                        expect(result.res.body[0]).to.have.property('measurement');
+                        expect(result.res.body[4].measurement).to.equal(undefined);
 
                         done();
                     }

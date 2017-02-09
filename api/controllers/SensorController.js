@@ -11,30 +11,28 @@ var Promise = require('bluebird');
  */
 module.exports = _.merge(_.cloneDeep(require('../base/Controller')), {
     'sensorOverview': function overview(request, response) {
-        var fetchMeasurements = function fetchMeasurements(){
-            return sails.models['measurement']
-                .find().sort('timestamp DESC');
+        var fetchMeasurements = function fetchMeasurements(sensors){
+            var fetches = _.map(sensors, function fetchLatest(sensor){
+                return sails.models['measurement']
+                    .findOne({
+                        where: {sensor: sensor.id},
+                        limit: 1,
+                        sort: 'timestamp DESC'
+                    });
+            });
+            return Promise.all(fetches).then(function(data){
+                return _.map(sensors, function setLatestMeasurement(sensor, index){
+                    return {
+                        sensor: sensor,
+                        measurement: data[index]
+                    }
+                })
+            });
         };
 
         var fetchSensors = function fetchSensors(){
             return sails.models['sensor']
                 .find().populate('group');
-        };
-
-        var formatData = function formatData(data){
-            return _.map(data.sensors, function iterator(item) {
-                return {
-                    measurement: _findLatestMeasurement(item.id),
-                    sensor: item
-                };
-            });
-
-            function _findLatestMeasurement(sensorId) {
-                var measurement = _.find(data.measurements, function iterator(candidate) {
-                    return candidate.sensor === sensorId;
-                });
-                return measurement;
-            }
         };
         /**
          * Generic success handler which is triggered when all jobs are done and data is ready to sent to client.
@@ -54,13 +52,9 @@ module.exports = _.merge(_.cloneDeep(require('../base/Controller')), {
             response.negotiate(error);
         };
 
-        Promise.props({
-            sensors: fetchSensors(),
-            measurements: fetchMeasurements()
-        })
-            .then(formatData)
+        fetchSensors()
+            .then(fetchMeasurements)
             .then(handlerSuccess)
-            .catch(handlerError)
-        ;
+            .catch(handlerError);
     }
 });
